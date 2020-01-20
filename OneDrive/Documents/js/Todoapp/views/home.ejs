@@ -3,6 +3,7 @@
         <title>
             Todo app
         </title>
+        <!-- link the css file -->
         <link rel="stylesheet" href="/css/home.css">
     </head>
     <body>
@@ -13,6 +14,7 @@
             </div>
 
         </div>
+        <!-- createing our form section to get form data -->
         <form action="/create" method="POST" id="creating-form">
             <div id="description-box">
             <label for ="Description" class="description-label">DESCRIPTION</label></br>
@@ -41,7 +43,7 @@
               <input type="submit" value="Submit" class="submit-button">
             </div>
 
-            
+                <!-- for acces the data of form using ejs -->
                 <%for(let i of createdata){%>
                     <div id="create-data">
                         
@@ -65,7 +67,7 @@
                     </div>
             
                 <%}%>
-            </form>
+            
         </form> 
             
             
