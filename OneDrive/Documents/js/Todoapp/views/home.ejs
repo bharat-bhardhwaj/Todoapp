@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+            Todo app
+        </title>
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+    <body>
+        <div id="body-div">
+        <div id= "todo-div">
+            <div class="todo-box">
+                TODO APP
+            </div>
+
+        </div>
+        <form action="/create" method="POST" id="creating-form">
+            <div id="description-box">
+            <label for ="Description" class="description-label">DESCRIPTION</label></br>
+            <input type="text"  name="DESCRIPTION" class="description-input" placeholder="what do you need to do">
+            <br/>
+            </div>
+            <div id=category-duedate-div>
+            <div id="category-box">
+            <label for="category" class="category-label">CATEGORY</label>
+            <select name="category" class="category-input">
+                <option value="none" selected>choose a category</option>
+                <option value="personal">personal</option>
+                <option value="work">work</option>
+                <option value="school">school</option>
+                <option value="cleaning">cleaning</option>
+                <option value="other">other</option>
+            </select>
+            </div>
+            <div id="duedate-box">
+            <label for="duedata" class="duedate-label">DUE DATE</label>
+            <input type="date" id="duedata" name="DUEDATE" class="duedate-input">
+
+            </div>
+            </div>
+            <div id="submit-div">
+              <input type="submit" value="Submit" class="submit-button">
+            </div>
+
+            
+                <%for(let i of createdata){%>
+                    <div id="create-data">
+                        
+                       <div class="createdata-checkbox"> 
+                           <a href="/destroy/<%= i.id %>">
+                           <img src="/img/icons8-delete-view-80.png" width="25px" height="25px" id= img-tag>
+                           </a>
+                        </div>
+
+
+                       <div id=descdue-div>
+                            <div class="desc-box"><%=i.DESCRIPTION%></div>
+                            <div class="due-box"><%=i.DUEDATE%></div>
+                       </div>
+                            
+                           <div class="category-type"> 
+                               <div class="inside-category"><%=i.category%></div>
+                            </div>
+                            
+                            
+                    </div>
+            
+                <%}%>
+            </form>
+        </form> 
+            
+            
+
+
+
+        </div>
+
+
+          
+            
+
+        
+        
+    </body>
+</html>

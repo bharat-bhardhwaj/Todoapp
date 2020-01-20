@@ -1,0 +1,260 @@
+/* // body element to be center */
+body{
+    background-color:whitesmoke;
+    
+    
+
+    
+}
+
+
+
+/* set the body element */
+
+#body-div{
+    background-color:white;
+    /* border: 2px solid lightblue; */
+    padding: 10px;
+    height: 100vh;
+    width: 50vw;
+    overflow:scroll;
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    
+}
+/* set the todo element */
+#todo-div{
+display:flex;
+ background-color:white;
+ padding: 10px;
+ height: 10%;
+ 
+ justify-content: center;  
+}
+
+.todo-box{
+    height: 100%;
+    width: 40%;
+    background-color:white;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+/* set a size of a form using id creating form */
+
+#creating-form{
+    background-color: white;
+    padding: 10px;
+    
+    height: 50%;
+}
+
+/* form description column   */
+
+/* description-box */
+
+#description-box{
+    background-color: whitesmoke;
+    padding:10px;
+
+    height: 20%;
+}
+.description-input:hover{
+    background-color: whitesmoke;
+}
+
+
+
+
+.description-label{
+    font-size: 25;
+    width: 50%;
+    height:50%;
+}
+
+.description-input{
+    
+    background-color: white;
+    width:100%;
+    height: 60%;
+    border:0;
+    outline: none;
+    font-size: 20;
+}
+
+/* set category-box height and widht */
+
+#category-duedate-div{
+    display: flex;
+    /* width: 100%; */
+    height:30%;
+    
+    flex-direction: row;
+    /* border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom:2px solid black; */
+    margin-top: 10px;
+
+}
+
+/* all category items */
+
+#category-box{
+    
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding-left:5px;
+    display: flex;
+    flex-direction:column;
+  
+}
+
+.category-label{
+    font-size: 25;
+    width: 50%;
+    height:30%;
+    padding-top: 5px;
+}
+
+.category-input{
+    width:100%;
+    height: 60%;
+    border:0;
+    outline: none;
+    font-size: 20;
+}
+.category-input:hover{
+    background-color: whitesmoke;
+}
+
+/* set for due date */
+#duedate-box{
+    
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding-left:5px;
+    display: flex;
+    flex-direction:column;
+    
+
+}
+
+.duedate-label{
+    font-size: 25;
+    width: 50%;
+    height:30%;
+    padding-top: 5px;
+}
+
+.duedate-input{
+    width:100%;
+    height: 60%;
+    border:0;
+    outline: none;
+    font-size: 20;
+}
+.duedate-input:hover{
+    background-color: whitesmoke;
+}
+
+/* button work here */
+#submit-div{
+    height: 30%;
+    width:100%;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+
+}
+.submit-button:hover{
+    height: 80%;
+    width: 40% ;
+}
+.submit-button{
+    height: 70%;
+    width: 30%;
+    background-color:white;
+    margin: 3%;
+    font-size: 50;
+}
+
+.submit-button:hover{
+    background-color: whitesmoke;
+}
+
+
+/* create data items create start */
+
+#create-data{
+    height: 20%;
+    width: 100%;
+    
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.createdata-checkbox{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 100%;
+    width: 5%;
+    
+
+}
+
+#descdue-div{
+    height: 100%;
+    width: 70%;
+    
+}
+.desc-box{
+    font-size: 25;
+}
+.due-box{
+    margin-top: 10px;
+}
+
+
+.category-type{
+    height: 70%;
+    width: 15%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.inside-category{
+    height: 50%;
+    width: 50%;
+    
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/* img tag  */
+
+#img-tag:hover{
+    margin-top: 10px;
+
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
